@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+.back-image {
+    background: url(./images/TRACE-EXPRESS-background-cabecero-inferior-derecho.jpg) no-repeat;
+}
+.top-image {
+    background: url(./images/TRACE-EXPRESS-background-cabecero-degradado-punta-izquierdo.jpg) no-repeat;
+}
+.bottom-image {
+    background: url(./images/TRACE-EXPRESS-background-azul-claro-central.jpg) no-repeat;
+    background-position-x: right;
+}
+.nuestros-servicios {
+    background:
+    url(./images/TRACE-EXPRESS-background-inferior-azul-oscuro.jpg) no-repeat;
+}
+
+/* Estilos de letra */
+.font-extrabold {
+    font-style: italic;
+    font-weight: 800;
+    letter-spacing: -5px;
+}
+.font-semibold {
+    font-style: italic;
+    font-weight: 600;
+}
+.font-light {
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: -2px;
+}
+.bold {
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+.azul-oscuro {
+    color: #002D58;
+}
+.white {
+    color: #FFF;
+}
+
+/* Header */
+header {
+    padding-top: 20px;
+}
+.iconos {
+    display: inline-block;
+    color: #FFA500;
+    background: #FFF;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 30px;
+}
+.iconos:hover {
+    color: #FFA500;
+}
+/* Fin Header */
+
+/* Main */
+.main {
+    padding: 30px 0 0 55px;
+}
+.titulo1 { font-size: 85px; display: block; }
+.titulo2 { font-size: 70px; display: block; margin-top: -20px;}
+.titulo3 { font-size: 48px; letter-spacing: -3px; }
+.titulo4 { font-size: 48px; letter-spacing: -2px; }
+.texto1 { font-size: 27px; color: #FFF; }
+.img-cabecera {
+    display: inline-block;
+    border-radius: 50%;
+    height: 120px;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    background: #FFF;
+    line-height: 98px;
+    margin-right: 50px;
+}
+.derecha {
+    margin: 0;
+}
+.boton {
+    font-size: 12px;
+    background: #518CD1;
+    border-color: #518CD1;
+    padding: 15px 35px;
+    border-radius: 30px;
+    color: white;
+    margin-top: 60px;
+    letter-spacing: 0;
+}
+.boton:hover {
+    background: #002D58;
+    border-color: #002D58;
+    transition: .5s ease-in;
+}
+.imagen-central-superior {
+    border-radius: 50%;
+    width: 400px;
+}
+.caja-titulo3 {
+    text-align: end;
+    margin-top: 85px;
+}
+.caja-titulo4 { margin-top: 90px; }
+.division {
+    margin: 15px 20px 15px auto;
+    border: 1px solid #002D58;
+    max-width: 315px;
+}
+.parrafos {
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+.imagen-central-inferior {
+    width: 400px;
+    margin-left: -70px;
+    border-radius: 0 0 160px 65%;
+}
+.bandera-venezuela {
+    position: absolute;
+    margin: 66px 0px 0 -264px;
+}
+.flecha {
+    position: absolute;
+    margin: 61px 0 0 -140px;
+}
+.trazo1 {
+    position: absolute;
+    margin: -25px 0px 0 -137px;
+    transform: rotate(-6deg);
+}
+.trazo2 {
+    position: absolute;
+    margin: -10px 0px 0 -124px;
+    transform: rotate(6deg);
+}
+.trazo3 {
+    position: absolute;
+    margin: 6px 0px 0 -115px;
+    transform: rotate(17deg);
+}
+.avion {
+    position: absolute;
+    margin: -70px 0 0 -10px;
+}
+.barco {
+    position: absolute;
+    margin: -25px 0 0 20px;
+} 
+.caja {
+    position: absolute;
+    margin: 15px 0 0 35px;
+}
+.division-parrafos {
+    margin: 15px 0px 15px auto;
+    border: 1px solid #FFF;
+    max-width: 280px;
+}
+.avion-bottom {
+    position: absolute;
+    margin: 150px 0 0px -525px;
+}
+.barco-bottom {
+    position: absolute;
+    margin: 285px 0 0px -450px;
+}
+/* Fin Main */
+
+/* Nuestros Servicios */
+.titulo-servicios {
+    background: url(./images/TRACE-EXPRESS-rectangulo-nuestros-servicios-inferior-izquierdo.jpg) no-repeat;
+    font-size: 72px;
+    padding: 0 115px;
+    line-height: inherit;
+}
+.lista {
+    margin-left: 100px;
+}
+.lista-servicios {
+    list-style: none;
+    list-style-image: url(./images/TRACE-EXPRESS-esferas-texto-listado-inferior.png);
+}
+.elemento-lista {
+    font-size: 27px;
+    letter-spacing: -2px;
+}
+.margin { margin-right: 40px; }
+.m30 { margin-right: -30px; }
+.m25 { margin-right: -25px; }
+.m10 { margin-right: -10px; }
+.imagen-inferior { 
+    margin: -80px 0 0 -10px;
+    width: 400px;
+}
+.compras {
+    position: absolute;
+    margin: -95px 0 0 230px;
+    width: 90px;
+} 
+.medicamentos {
+    position: absolute;
+    margin: -145px 0 0 -20px;
+    width: 90px;
+}
+.entrega {
+    position: absolute;
+    margin: -80px 0 0 100px;
+    width: 90px;
+}
+/* Fin Nuestros Servicios */
+
+/* Contacto */
+.contacto {
+    text-align: center;
+}
+.titulo-contacto {
+    font-size: 64px;
+}
+.contacto p {
+    font-size: 24px;
+}
+.icono {
+    color: #FFF;
+    background: #ff8800;
+    padding: 4px;
+    font-size: 16px;
+    border-radius: 50%;
+}
+.titulo2-contacto { font-size: 36px; letter-spacing: -2px; }
+.iconos-redes {
+    display: inline-block;
+    color: #FFF;
+    background: #ff8800;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 30px;
+}
+.envios-maritimos {
+    position: absolute;
+    right: 0;
+    height: 550px;
+}
+.envios-aereos {
+    position: absolute;
+    left: 0;
+    margin-top: 365px;
+}
+/* Fin Contacto */
+
+
+
+
