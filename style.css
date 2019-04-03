@@ -174,11 +174,11 @@ header {
 }
 .avion-bottom {
     position: absolute;
-    margin: 150px 0 0px -525px;
+    margin: 150px 0 0px -475px;
 }
 .barco-bottom {
     position: absolute;
-    margin: 285px 0 0px -450px;
+    margin: 285px 0 0px -390px;
 }
 /* Fin Main */
 
@@ -267,6 +267,17 @@ header {
 }
 /* Fin Contacto */
 
+@media (max-width: 768px) {
+    .titulo1 { font-size: 68px; }
+    .titulo2 { font-size: 57px; }
+    .texto1 { font-size: 23px; }
+    .main {
+        text-align: center;
+    }
+    .img-cabecera {
+        margin-right: 10px;
+    }
+}
 
 
 
