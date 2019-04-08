@@ -7,20 +7,22 @@
 .container-fluid {
     padding: 0;
     margin: 0;
+    /*overflow-y: hidden;*/
 }
+.row { margin:0; }
 .back-image {
-    background: url(./images/TRACE-EXPRESS-background-cabecero-inferior-derecho.jpg) no-repeat;
-}
-.top-image {
-    background: url(./images/TRACE-EXPRESS-background-cabecero-degradado-punta-izquierdo.jpg) no-repeat;
+    background: url(../images/TRACE-EXPRESS-background-top.jpg) 
+    no-repeat;
+    background-size: contain;
 }
 .bottom-image {
-    background: url(./images/TRACE-EXPRESS-background-azul-claro-central.jpg) no-repeat;
-    background-position-x: right;
+    background: url(../images/TRACE-EXPRESS-background-azul-claro-central.jpg) no-repeat;
+    background-position-x: right;    
 }
 .nuestros-servicios {
+    padding-top: 100px;  padding-bottom: 100px;
     background:
-    url(./images/TRACE-EXPRESS-background-inferior-azul-oscuro.jpg) no-repeat;
+    url(../images/TRACE-EXPRESS-background-inferior-azul-oscuro.jpg) no-repeat;
 }
 
 /* Estilos de letra */
@@ -36,11 +38,11 @@
 .font-light {
     font-style: italic;
     font-weight: 300;
-    letter-spacing: -2px;
+    /*letter-spacing: -2px;*/
 }
 .bold {
     font-weight: 700;
-    letter-spacing: -2px;
+    /*letter-spacing: -2px;*/
 }
 .azul-oscuro {
     color: #002D58;
@@ -53,6 +55,7 @@
 header {
     padding-top: 20px;
 }
+#envia-con-trace { min-height: 85vh; }
 .iconos {
     display: inline-block;
     color: #FFA500;
@@ -64,21 +67,25 @@ header {
     height: 50px;
     text-align: center;
     line-height: 30px;
+    transition: all ease 0.7s
+    
 }
 .iconos:hover {
     color: #FFA500;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+    padding-top: 10px
 }
 /* Fin Header */
 
 /* Main */
-.main {
+.head-left {
     padding: 30px 0 0 55px;
 }
 .titulo1 { font-size: 85px; display: block; }
 .titulo2 { font-size: 70px; display: block; margin-top: -20px;}
 .titulo3 { font-size: 48px; letter-spacing: -3px; }
 .titulo4 { font-size: 48px; letter-spacing: -2px; }
-.texto1 { font-size: 27px; color: #FFF; }
+.texto1 { font-size: 27px; color: #FFF; text-transform: uppercase; font-style: italic; letter-spacing: -1px }
 .img-cabecera {
     display: inline-block;
     border-radius: 50%;
@@ -89,25 +96,23 @@ header {
     background: #FFF;
     line-height: 98px;
     margin-right: 50px;
+    transition: all ease 0.7s
+}
+.img-cabecera:hover {
+    color: #FFA500;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.5);
 }
 .derecha {
     margin: 0;
 }
-.boton {
-    font-size: 12px;
-    background: #518CD1;
-    border-color: #518CD1;
+
+.btn-primary {
     padding: 15px 35px;
     border-radius: 30px;
     color: white;
     margin-top: 60px;
-    letter-spacing: 0;
 }
-.boton:hover {
-    background: #002D58;
-    border-color: #002D58;
-    transition: .5s ease-in;
-}
+
 .imagen-central-superior {
     border-radius: 50%;
     width: 400px;
@@ -116,7 +121,7 @@ header {
     text-align: end;
     margin-top: 85px;
 }
-.caja-titulo4 { margin-top: 90px; }
+.caja-titulo4 { margin-top: 70px; }
 .division {
     margin: 15px 20px 15px auto;
     border: 1px solid #002D58;
@@ -128,63 +133,19 @@ header {
     letter-spacing: -1px;
 }
 .imagen-central-inferior {
-    width: 400px;
+    width: 500px;
     margin-left: -70px;
-    border-radius: 0 0 160px 65%;
-}
-.bandera-venezuela {
-    position: absolute;
-    margin: 66px 0px 0 -264px;
-}
-.flecha {
-    position: absolute;
-    margin: 61px 0 0 -140px;
-}
-.trazo1 {
-    position: absolute;
-    margin: -25px 0px 0 -137px;
-    transform: rotate(-6deg);
-}
-.trazo2 {
-    position: absolute;
-    margin: -10px 0px 0 -124px;
-    transform: rotate(6deg);
-}
-.trazo3 {
-    position: absolute;
-    margin: 6px 0px 0 -115px;
-    transform: rotate(17deg);
-}
-.avion {
-    position: absolute;
-    margin: -70px 0 0 -10px;
-}
-.barco {
-    position: absolute;
-    margin: -25px 0 0 20px;
-} 
-.caja {
-    position: absolute;
-    margin: 15px 0 0 35px;
 }
 .division-parrafos {
     margin: 15px 0px 15px auto;
     border: 1px solid #FFF;
     max-width: 280px;
 }
-.avion-bottom {
-    position: absolute;
-    margin: 150px 0 0px -475px;
-}
-.barco-bottom {
-    position: absolute;
-    margin: 285px 0 0px -390px;
-}
 /* Fin Main */
 
 /* Nuestros Servicios */
 .titulo-servicios {
-    background: url(./images/TRACE-EXPRESS-rectangulo-nuestros-servicios-inferior-izquierdo.jpg) no-repeat;
+    background: url(../images/TRACE-EXPRESS-rectangulo-nuestros-servicios-inferior-izquierdo.jpg) no-repeat;
     font-size: 72px;
     padding: 0 115px;
     line-height: inherit;
@@ -194,11 +155,14 @@ header {
 }
 .lista-servicios {
     list-style: none;
-    list-style-image: url(./images/TRACE-EXPRESS-esferas-texto-listado-inferior.png);
+    list-style-image: url(../images/TRACE-EXPRESS-esferas-texto-listado-inferior.png);
+    margin: 30px 20px 0 0;
 }
 .elemento-lista {
-    font-size: 27px;
-    letter-spacing: -2px;
+    font-size: 25px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-style: italic;
 }
 .margin { margin-right: 40px; }
 .m30 { margin-right: -30px; }
@@ -208,27 +172,21 @@ header {
     margin: -80px 0 0 -10px;
     width: 400px;
 }
-.compras {
-    position: absolute;
-    margin: -95px 0 0 230px;
-    width: 90px;
-} 
-.medicamentos {
-    position: absolute;
-    margin: -145px 0 0 -20px;
-    width: 90px;
-}
-.entrega {
-    position: absolute;
-    margin: -80px 0 0 100px;
-    width: 90px;
-}
+.icony { background: #FF8800; border-radius: 40px; padding: 10px; margin-bottom: 10px}
 /* Fin Nuestros Servicios */
 
 /* Contacto */
 .contacto {
     text-align: center;
+    padding-top: 120px
 }
+#contacto a i.icony { color:#FFF; }
+a:link { text-decoration: none }
+#contacto {  background: url(../images/TRACE-EXPRESS-background-bottom.jpg) 
+    no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+ }
 .titulo-contacto {
     font-size: 64px;
 }
@@ -265,9 +223,68 @@ header {
     left: 0;
     margin-top: 365px;
 }
+.bottom-space { margin-bottom: 70px; padding-bottom: 70px }
+.bottom-space100 { padding-bottom:100px }
 /* Fin Contacto */
 
-@media (max-width: 768px) {
+
+/*Creditos BESIGN */
+#besign-footer {
+    background: #595959;
+    width: 100%;
+    float: left;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+}
+#cliente {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #999;
+    width: 60%;
+    padding: 2px 5px 2px 25px;
+    float: left;
+}
+
+#besign {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    color: #CCC;
+    padding: 2px 25px 2px 5px;
+    width: 30%;
+    text-align: right;
+    float: right;
+}
+
+#besign a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FC0;
+}
+/*Creditos BESIGN */
+
+
+
+ 
+ @media (min-width:1440px){   
+     .bottom-image { background-position-y: bottom; }
+  }
+ @media (max-width:1280px){   
+  }
+@media (max-width:1024px){
+    .titulo1 { font-size: 65px }   
+    .titulo2 { font-size: 60px } 
+    .texto1  { font-size: 20px;  } 
+    .img-cabecera { margin-right: 30px; max-width: 110px; max-height: 110px; padding: 5px; }
+    .img-cabecera img { border-radius: 8px; }
+    .elemento-lista { font-size: 23px }
+}
+@media (max-width:960px){   
+}
+ @media (max-width:800px){ 
+    .elemento-lista { font-size: 18px }
     .titulo1 { font-size: 68px; }
     .titulo2 { font-size: 57px; }
     .texto1 { font-size: 23px; }
@@ -276,8 +293,60 @@ header {
     }
     .img-cabecera {
         margin-right: 10px;
+    }  
+    .titulo-servicios { 
+    font-size: 59px; }
+    .lista { margin-left: 60px }
+
+  }
+ @media (max-width:768px){   
+    .titulo1, .titulo2 {        font-size: 50px;
     }
-}
-
-
+    .img-cabecera { max-width: 90px; max-height: 90px; 
+    line-height: 68px;  padding: 10px; }
+    .img-cabecera img { max-width: 90% }
+    .titulo3 {     font-size: 40px; }
+    .iconos { width: 35px; height: 35px; line-height: 25px; padding: 5px; font-size: 20px; }
+    #que-hacemos .head-left { padding-left: 0; }
+    .imagen-central-inferior { margin-left: -50px; }
+    .titulo4 { font-size: 35px; }
+    .parrafos { font-size: 16px; }
+    .contacto p {font-size: 23px; }
+ }
+ @media (max-width:640px){   
+  }
+ @media (max-width:600px){   
+  }
+ @media (max-width:475px){   
+    .logoo { margin-bottom: 50px }
+    .texto1 { color: #F1592B; 
+    font-size: 19px; }
+    .head-left { padding-left: 15px; text-align: center; }
+    .btn { margin-bottom: 30px }
+    .imagen-central-inferior { margin-left: initial;  }
+    .titulo-servicios { padding: 0 65px; font-size: 30px; letter-spacing: -2px; }
+    .contacto p { font-size: 19px }
+    .bottom-image { background-position-y: bottom; }
+  }
+ @media (max-width:425px){   
+  }
+ @media (max-width:375px){   
+     .titulo-contacto { font-size: 60px; }
+     .titulo3 { font-size: 38px; }
+     .parrafos { padding: 0 5px; }
+     .titulo-servicios { font-size: 25px; }
+  }
+ @media (max-width:325px){   
+     .titulo-servicios { font-size: 21px; }
+     .titulo-contacto { font-size: 54px; }
+     .titulo3 { font-size: 34px; }
+     .contacto p { font-size: 15px; }
+     .titulo2-contacto { font-size: 28px; }
+     #besign { width: 35%; }
+     .titulo1, .titulo2 { font-size: 40px; letter-spacing: -4px; padding-bottom: 5px; }
+     .texto1 { font-size: 16px; }
+     .logoo { margin: 0 0 50px -30px; }
+  }
+ @media (max-width:240px){   
+  }
 
