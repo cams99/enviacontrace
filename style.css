@@ -281,6 +281,8 @@ a:link { text-decoration: none }
  
  @media (min-width:1440px){   
      #envia-con-trace { min-height: 100vh; }
+     .bottom-image { background-size: contain; }
+     .nuestros-servicios { background-size: cover; }
   }
  @media (max-width:1280px){   
   }
